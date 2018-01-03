@@ -1,0 +1,13 @@
+.nsb-softfooter {
+  font-size: 1.75rem;
+  color: #333;
+  text-align: center;
+
+  padding-top: 5.5rem;
+  padding-bottom: 3.75rem;
+
+  border-bottom: 0.0625rem solid #adafaf;
+  background: url('./tog.svg') bottom 0.357rem left no-repeat,
+    url('./fjell.svg') bottom 0.357rem right no-repeat;
+  background-size: 8rem auto, 5.25rem auto;
+}

@@ -1,0 +1,13 @@
+.nsb-article__preface {
+  font-size: 1.75rem;
+  font-weight: 300;
+  line-height: 1.285;
+
+  margin: 0 0 2.25rem;
+}
+
+.nsb-article__preface > p {
+  font-size: inherit;
+  font-weight: inherit;
+  line-height: inherit;
+}

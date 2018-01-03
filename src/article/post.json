@@ -1,0 +1,31 @@
+{
+  "sys": {
+    "space": {
+      "sys": {
+        "type": "Link",
+        "linkType": "Space",
+        "id": "19kcgufi8mus"
+      }
+    },
+    "id": "2ps8LFSODikCMo0Sqg86SK",
+    "type": "Entry",
+    "createdAt": "2018-01-03T11:23:47.195Z",
+    "updatedAt": "2018-01-03T11:46:35.362Z",
+    "revision": 2,
+    "contentType": {
+      "sys": {
+        "type": "Link",
+        "linkType": "ContentType",
+        "id": "post"
+      }
+    },
+    "locale": "en-US"
+  },
+  "fields": {
+    "heading": "Bruk av cookies/infokapsler",
+    "preface":
+      "Vi bruker cookies/infokapsler på nettsidene våre. En cookie (informasjonskapsel), enten midlertidig eller vedvarende, er en liten fil som inneholder en viss mengde data.",
+    "body":
+      "Dette blir lagret på din datamaskin. Vi ønsker at vår hjemmeside\nskal være informativ, personlig og så brukervennlig som mulig, og\ncookies hjelper oss å oppnå dette målet. Du kan selv bestemme om\ndu vil tillate bruk av cookies.\n\n### Hva er cookies?\n\nEn cookie er en liten fil som inneholder en viss mengde data.\nDenne filen kan vår nettside sende til nettleseren din. Denne\ninformasjonskapselen kan da hentes av oss, noe som tillater oss å\ntilpasse våre nettsider og tjenester tilsvarende. Det er viktig å\npresisere at cookies ikke samler inn personopplysninger lagret på\nhverken harddisken eller datamaskinen din.\n\n### Hvordan deaktivere cookies?\n\nNSB bruker ikke cookies til å samle inn personlig, identifiserbar\ninformasjon om deg. Skulle du alikevel ønske å deaktivere, avvise\neller blokkere bruken av informasjonskapsler, vil noen deler av\nnsb.no ikke fungere fullt ut, eller i noen tilfeller, vil vår\nnettside ikke være tilgjengelig i det hele tatt.\n\nNSB setter følgende cookies:\n* www.nsb.no\n* Track.adform.net\n* www.google.no\n* www.facebook.com\n* www.youtube.com\n\nDu kan også slette cookies som har blitt lagret på din datamaskin.\nDette gjør du via menyen i nettleseren din. Hvordan dette gjøres,\navhenger av nettleseren din.\n\n\n\n| Tables        | Are           | Cool  |\n| ------------- |:-------------:| -----:|\n| col 3 is      | right-aligned | $1600 |\n| col 2 is      | centered      |   $12 |\n| zebra stripes | are neat      |    $1 |\n\n| Header     | Header     |\n| ---------- | ---------- |\n| Cell       | Cell       |\n| Cell       | Cell       |\n\n<p>kent bar her</p>\n\n"
+  }
+}

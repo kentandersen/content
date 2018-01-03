@@ -1,0 +1,7 @@
+.nsb-app-btns__btn {
+  display: inline-block;
+}
+
+.nsb-app-btns__btn + .nsb-app-btns__btn {
+  margin-left: 2.25rem;
+}

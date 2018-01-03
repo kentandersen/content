@@ -1,0 +1,133 @@
+body {
+  margin: 0;
+  padding: 0 0.75rem;
+}
+
+.nsb-wrapper {
+  max-width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+  /* padding: 0 1rem; */
+}
+
+/*
+.nsb-wrapper:after {
+  content: ' ';
+  display: block;
+  clear: both;
+}
+
+@media (min-width: 769px) {
+  .nsb-wrapper {
+    padding: 0 24px;
+  }
+}
+
+.nsb-wrapper,
+.nsb-wrapper--narrow,
+.nsb-wrapper--panorama,
+.nsb-wrapper--wide {
+  max-width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+  box-sizing: content-box;
+}
+
+.nsb-wrapper--narrow:after,
+.nsb-wrapper--panorama:after,
+.nsb-wrapper--wide:after,
+.nsb-wrapper:after {
+  content: ' ';
+  display: block;
+  clear: both;
+}
+
+@media (max-width: 768px) {
+  .nsb-wrapper,
+  .nsb-wrapper--narrow,
+  .nsb-wrapper--panorama,
+  .nsb-wrapper--wide {
+    padding: 0 12px;
+  }
+
+  .nsb-wrapper--narrow .nsb-bleed,
+  .nsb-wrapper--panorama .nsb-bleed,
+  .nsb-wrapper--wide .nsb-bleed,
+  .nsb-wrapper .nsb-bleed {
+    margin-left: -12px;
+    margin-right: -12px;
+  }
+}
+
+@media (min-width: 769px) {
+  .nsb-wrapper,
+  .nsb-wrapper--narrow,
+  .nsb-wrapper--panorama,
+  .nsb-wrapper--wide {
+    padding: 0 24px;
+  }
+}
+
+@media (min-width: 769px) {
+  .nsb-wrapper--narrow {
+    max-width: 632px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .nsb-wrapper--narrow:after {
+    content: ' ';
+    display: block;
+    clear: both;
+  }
+}
+
+@media (min-width: 1025px) {
+  .nsb-wrapper--wide {
+    max-width: 1124px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .nsb-wrapper--wide:after {
+    content: ' ';
+    display: block;
+    clear: both;
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 1224px) {
+  .nsb-wrapper--panorama {
+    max-width: 1124px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .nsb-wrapper--panorama:after {
+    content: ' ';
+    display: block;
+    clear: both;
+  }
+}
+
+@media (min-width: 1225px) {
+  .nsb-wrapper--panorama {
+    max-width: 1452px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .nsb-wrapper--panorama:after {
+    content: ' ';
+    display: block;
+    clear: both;
+  }
+}
+
+@media (max-width: 768px) {
+  .nsb-wrapper .nsb-bleed {
+    margin-right: -12px;
+    margin-left: -12px;
+  }
+}
+*/
