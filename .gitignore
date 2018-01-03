@@ -19,3 +19,7 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+# fonts
+src/styleguide/fonts/
+src/styleguide/fonts.css
