@@ -13,11 +13,21 @@ h1 {
   font-weight: 300;
   line-height: 1.125;
 
+  margin-top: 2.5rem;
   margin-bottom: 0.75rem;
 }
 
 h1.page-header {
   margin-top: 3.75rem;
+}
+
+h2 {
+  font-size: 2.25rem;
+  font-weight: 300;
+  line-height: 1.16666;
+
+  margin-top: 1.875rem;
+  margin-bottom: 1.125rem;
 }
 
 h3 {
@@ -51,6 +61,11 @@ ol {
   padding: 0 0 0 1.125rem;
 }
 
+dl {
+  font-size: 1.125rem;
+  margin: 1rem 0;
+}
+
 h1,
 h2,
 h3,
@@ -58,6 +73,7 @@ h4,
 h5,
 p,
 ul,
-ol {
+ol,
+dl {
   color: #333;
 }

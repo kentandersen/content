@@ -4,10 +4,13 @@ import marksy from 'marksy';
 const compile = marksy({ createElement });
 
 function markdownToReact(markdown) {
+  if (!markdown) {
+    return;
+  }
   return compile(markdown).tree;
 }
 
-export function brandToArticle({ fields }) {
+export function brandToArticle({ fields = {} }) {
   return {
     header: fields.companyName,
     preface: fields.website,
@@ -15,7 +18,7 @@ export function brandToArticle({ fields }) {
   };
 }
 
-export function postToArticle({ fields }) {
+export function postToArticle({ fields = {} }) {
   return {
     header: fields.heading,
     preface: markdownToReact(fields.preface),

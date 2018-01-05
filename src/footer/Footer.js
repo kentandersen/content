@@ -1,6 +1,7 @@
 import './Footer.css';
 
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { B } from 'b_';
 
 const bemName = B({ modSeparator: '--' }).bind(undefined, 'nsb-page-footer');
@@ -15,12 +16,9 @@ function Footer() {
 
         <ul className={bemName('list')}>
           <li className={bemName('list-item')}>
-            <a
-              className={bemName('link')}
-              href="https://test3.cloud.nsb.no/om-nsb/kontakt-oss/hittegods"
-            >
+            <Link to="/hittegods" className={bemName('link')}>
               <span>Mistet eller glemt noe?</span>
-            </a>
+            </Link>
           </li>
           <li className={bemName('list-item')}>
             <a
@@ -82,12 +80,9 @@ function Footer() {
             </a>
           </li>
           <li className={bemName('list-item', { secondary: true })}>
-            <a
-              className={bemName('link')}
-              href="https://test3.cloud.nsb.no/12669/bruk-av-cookies-infokapsler"
-            >
+            <Link to="/cookie" className={bemName('link')}>
               <span>Informasjonskapsler (cookies)</span>
-            </a>
+            </Link>
           </li>
         </ul>
         <h3 className={`${bemName('header')} visuallyhidden`}>
