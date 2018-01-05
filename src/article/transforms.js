@@ -1,6 +1,7 @@
 import React, { createElement } from 'react';
 import marksy from 'marksy';
 import Accordion from '../components/accordion/Accordion';
+import FeatureBox from '../components/feature/Feature';
 
 const compile = marksy({ createElement });
 
@@ -19,10 +20,24 @@ function trekkspillToAccordion(module, key) {
   return <Accordion key={key} heading={module.fields.tittel} items={items} />;
 }
 
+function featureToFeatureBox({ fields }, key) {
+  const content = markdownToReact(fields.body);
+  return <FeatureBox key={key} heading={fields.heading} content={content} />;
+}
+
+function unknownModule(module, key) {
+  return <div key={key}>Ukjent: {module.sys.contentType.sys.id}</div>;
+}
+
 function mapModules(modules = []) {
   return modules.map((module, index) => {
-    if (module.sys.contentType.sys.id === 'trekkspill') {
-      return trekkspillToAccordion(module, index);
+    switch (module.sys.contentType.sys.id) {
+      case 'trekkspill':
+        return trekkspillToAccordion(module, index);
+      case 'feature':
+        return featureToFeatureBox(module, index);
+      default:
+        return unknownModule(module, index);
     }
   });
 }
@@ -40,6 +55,7 @@ export function postToArticle({ fields = {} }) {
     header: fields.heading,
     preface: markdownToReact(fields.preface),
     body: markdownToReact(fields.body),
-    modules: mapModules(fields.moduler)
+    modulesTop: mapModules(fields.modulesTop),
+    modulesBottom: mapModules(fields.modulesBottom)
   };
 }
