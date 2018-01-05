@@ -1,0 +1,43 @@
+.nsb-accordion {
+  margin-bottom: 2.625rem;
+}
+
+.nsb-accordion__section {
+  padding: 0.375rem 0.375rem 0.375rem 0.75rem;
+  border-bottom: 0.0625rem solid #adafaf;
+}
+
+.nsb-accordion__section:first-of-type {
+  border-top: 0.0625rem solid #adafaf;
+}
+
+.nsb-accordion__toggle {
+  display: block;
+  width: 100%;
+  text-align: left;
+
+  margin: 0;
+  padding: 0.1875rem 1.25rem 0.1875rem 0;
+  border: 0;
+
+  font-size: 1.125rem;
+  line-height: 1.222rem;
+  font-weight: 300;
+
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: 100%;
+  background-size: 1rem;
+}
+
+.nsb-accordion__toggle--closed {
+  background-image: url('./nsb_plus.svg');
+}
+
+.nsb-accordion__toggle--open {
+  background-image: url('./nsb_minus.svg');
+}
+
+.nsb-accordion__content {
+  margin-top: 1.125rem;
+}
