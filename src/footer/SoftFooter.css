@@ -1,5 +1,6 @@
 .nsb-softfooter {
-  font-size: 1.75rem;
+  font-size: 1.125rem;
+  line-height: 1.285;
   color: #333;
   text-align: center;
 
@@ -10,4 +11,25 @@
   background: url('./tog.svg') bottom 0.357rem left no-repeat,
     url('./fjell.svg') bottom 0.357rem right no-repeat;
   background-size: 8rem auto, 5.25rem auto;
+}
+
+.nsb-softfooter--animate {
+  animation: marquee 2s linear infinite;
+}
+
+@media (min-width: 460px) {
+  .nsb-softfooter {
+    font-size: 1.75rem;
+    animation-duration: 4s;
+  }
+}
+
+@keyframes marquee {
+  0% {
+    background-position: bottom 0.357rem left -8rem, bottom 0.357rem right;
+  }
+  100% {
+    background-position: bottom 0.357rem left calc(100% + 8rem),
+      bottom 0.357rem right;
+  }
 }

@@ -1,29 +1,61 @@
 import './SoftFooter.css';
-import React from 'react';
-import b from 'b_';
+import React, { PureComponent } from 'react';
+import { B } from 'b_';
 
-const bemName = b.bind(undefined, 'nsb-softfooter');
+const bemName = B({ modSeparator: '--' }).bind(undefined, 'nsb-softfooter');
 
-// blocks
-// b('button', {size: 'xl'}) === 'button button_size_xl';
-//
-// // block elements
-// b('modal', 'close', {size: 'xl'}) === 'modal__close modal__close_size_xl';
+const INITIAL_DELAY_BEFORE_TUT = 2000;
+const DELAY_BETWEEN_TUT = 4000;
+const SHOW_TUT_DURATION = 1500;
 
-// const bemName = b.bind(undefined, {
-//   name: ,
-//   modifiers: ['color', 'block'],
-//   states: ['disabled']
-// });
+class SoftFooter extends PureComponent {
+  constructor() {
+    super();
+    this.state = { animate: false, tutTut: false };
 
-function SoftFooter() {
-  return (
-    <section className={`nsb-wrapper ${bemName()}`}>
-      <div className={bemName('kissgoodbye')}>
-        Spar tid, miljø og penger. Ta toget.
-      </div>
-    </section>
-  );
+    this.toggleAnimation = this.toggleAnimation.bind(this);
+  }
+
+  toggleAnimation() {
+    const { animate } = this.state;
+    this.setState({ animate: !animate });
+
+    if (!animate) {
+      this.timeoutId = setTimeout(
+        this.showTutTut.bind(this),
+        INITIAL_DELAY_BEFORE_TUT
+      );
+    } else {
+      clearTimeout(this.timeoutId);
+      this.hideTutTut();
+    }
+  }
+
+  showTutTut() {
+    this.setState({ tutTut: true });
+    this.timeoutId = setTimeout(() => {
+      this.hideTutTut();
+      this.timeoutId = setTimeout(
+        this.showTutTut.bind(this),
+        DELAY_BETWEEN_TUT
+      );
+    }, SHOW_TUT_DURATION);
+  }
+
+  hideTutTut() {
+    this.setState({ tutTut: false });
+  }
+
+  render() {
+    const { animate, tutTut } = this.state;
+    return (
+      <section className={`nsb-wrapper ${bemName({ animate })}`}>
+        <div className={bemName('kissgoodbye')} onClick={this.toggleAnimation}>
+          {tutTut ? 'Tut! Tut!' : 'Spar tid, miljø og penger. Ta toget.'}
+        </div>
+      </section>
+    );
+  }
 }
 
 export default SoftFooter;

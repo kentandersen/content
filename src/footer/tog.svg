@@ -1,1 +1,29 @@
-<svg width="126" height="45" viewBox="0 0 126 45" xmlns="http://www.w3.org/2000/svg"><title>Group 2</title><g id="Forside" fill="none" fill-rule="evenodd"><g id="Footer" transform="translate(-141 -160)"><g id="Group-2" transform="translate(141 160)"><path id="Fill-2" fill="#1D1D1B" d="M1 41v4h120.262L125 41z"/><path id="Fill-3" fill="#D52B1E" d="M99.424 19.795H75.706l-1.91-4h25.628z"/><path id="Fill-4" fill="#1890A3" d="M75.706 20.406l-1.91-4.611 9.187-9.187 3.26 3.26z"/><path d="M121.269 45.008v-1.945c0-12.36-9.465-23.25-21.845-23.25v-4.011c14.162 0 25.212 11.106 26.392 24.946l-4.547 4.26z" id="Fill-5" fill="#D52B1E"/><path id="Fill-7" fill="#1890A3" d="M82.982 13.13l-9.869-9.87L76.375 0l9.868 9.87z"/><path id="Fill-9" fill="#D52B1E" d="M.983 16h66.72l2.532 4H.983z"/><path id="Rectangle-3" fill="#D8D8D8" d="M1 20h4v25H1z"/></g></g></g></svg>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 22.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 126 45" style="enable-background:new 0 0 126 45;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#FFFFFF;}
+	.st1{fill:#1D1D1B;}
+	.st2{fill:#D52B1E;}
+	.st3{fill:#1890A3;}
+	.st4{fill:#D8D8D8;}
+</style>
+<path class="st0" d="M121.2,41c0,0-0.8-20.1-21.8-21.2H5V41H121.2"/>
+<polygon class="st0" points="75.7,19.8 70.2,20 67.7,16 74.4,16 "/>
+<title>Group 2</title>
+<g id="Forside">
+	<g id="Footer" transform="translate(-141 -160)">
+		<g id="Group-2" transform="translate(141 160)">
+			<path id="Fill-2" class="st1" d="M1,41v4h120.3l3.7-4H1z"/>
+			<path id="Fill-3" class="st2" d="M99.4,19.8H75.7l-1.9-4h25.6L99.4,19.8z"/>
+			<path id="Fill-4" class="st3" d="M75.7,20.4l-1.9-4.6L83,6.6l3.3,3.3L75.7,20.4z"/>
+			<path id="Fill-5" class="st2" d="M121.3,45v-1.9c0-12.4-9.5-23.2-21.8-23.2v-4c14.2,0,25.2,11.1,26.4,24.9
+				C125.8,40.7,121.3,45,121.3,45z"/>
+			<path id="Fill-7" class="st3" d="M83,13.1l-9.9-9.9L76.4,0l9.9,9.9L83,13.1z"/>
+			<path id="Fill-9" class="st2" d="M1,16h66.7l2.5,4H1V16z"/>
+			<path id="Rectangle-3" class="st4" d="M1,20h4v25H1V20z"/>
+		</g>
+	</g>
+</g>
+</svg>
